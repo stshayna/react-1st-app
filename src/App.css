@@ -1,4 +1,5 @@
-nav {
+/* nav */
+nav.dark {
   display: flex;
   align-items: center;
   background-color: rgba(1,1,1, 0.6);
@@ -20,7 +21,8 @@ nav > h4 {
   margin-right: 8px;
 }
 
-.main-container {
+/* main */
+main.dark {
   margin: 56px;
   color: white;
 }
@@ -29,10 +31,10 @@ nav > h4 {
   margin-bottom: 32px;
   letter-spacing: -0.08rem;
 }
-.main-container > ul > li {
+li {
   padding-block: 10px;
 }
-.main-container > ul > li::marker {
+li::marker {
   color: #62DBF9;
   font-size: 1.4rem;
 }
