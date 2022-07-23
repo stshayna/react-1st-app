@@ -1,10 +1,14 @@
 /* nav */
-nav.dark {
+nav {
   display: flex;
   align-items: center;
-  background-color: rgba(1,1,1, 0.6);
-  color: white;
-  padding: 16px 24px;
+  background-color: white;
+  color: rgba(1,1,1, 0.6);
+  padding: 12px 26px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+}
+nav.dark {
+  background-color: #282D35;
 }
 nav > h2 {
   flex-grow: 1;
@@ -12,19 +16,67 @@ nav > h2 {
   font-size: 25px;
   letter-spacing: -0.02rem;
 }
-nav > h4 {
-  font-weight: 600;
-}
 .nav-logo {
-  height: 40px;
+  height: 36px;
   pointer-events: none;
   margin-right: 8px;
 }
+.toggler {
+  display: flex;
+  align-items: center;
+}
+.toggler p {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.toggler-light {
+  color: rgba(1,1,1, 0.8);
+}
+.dark .toggler-light {
+  color: rgb(255, 255, 255, 0.32);
+}
+.toggler-dark {
+  color: rgba(1,1,1, 0.24);
+}
+.dark .toggler-dark {
+  color: white;
+}
+.toggler-slider {
+  background-color: black;
+  width: 30px;
+  height: 12px;
+  margin-inline: 8px;
+  border-radius: 2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 2px solid black;
+}
+.dark .toggler-slider {
+  background-color: white;
+  justify-content: flex-end;
+  border: 2px solid white;
+}
+.toggler-circle {
+  background-color: white;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+}
+.dark .toggler-circle {
+  background-color: black;
+}
 
 /* main */
+main {
+  padding: 56px;
+  color: rgba(1,1,1, 0.8);
+  background-color: white;
+}
 main.dark {
-  margin: 56px;
   color: white;
+  background-color: #282D35;
 }
 .main-heading {
   font-size: 40px;
